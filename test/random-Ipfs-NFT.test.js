@@ -32,15 +32,6 @@ const {
                  networkConfig[network.config.chainId]["vrfCoordinatorV2"]
               );
            });
-           //   it("Initializes SubscriptionId correctly", async () => {
-           //      const SubscriptionId = await randomIpfsNft
-           //         .getSubscriptionId()
-           //         .toString();
-           //      assert.equal(
-           //         SubscriptionId,
-           //         networkConfig[network.config.chainId]["subscriptionId"]
-           //      );
-           //   });
            it("Initializes GasLane correctly", async () => {
               const gasLane = await randomIpfsNft.getGasLane();
               assert.equal(
@@ -63,10 +54,6 @@ const {
                  networkConfig[network.config.chainId]["callbackGasLimit"]
               );
            });
-           //   it("Initializes TokenCounter correctly", async () => {
-           //      const tokenCounter = await randomIpfsNft.getTokenCounter();
-           //      assert.equal(tokenCounter, "0");
-           //   });
         });
         describe("Request NFT", function () {
            it("Fails if payment isn't sent with the request", async function () {
